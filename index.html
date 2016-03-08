@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <link rel="stylesheet" href="">
+    <script src="cell.js"></script>
+    <script src="generation.js"></script>
+    <script src="paintutil.js"></script>
+    <script src="ruleutil.js"></script>
+    <script src="initialstateutil.js"></script>
+</head>
+<body>
+    <div style="width: 902px; margin: auto;">
+        <canvas id="canvas" width="700" height="640"
+            style="border: 1px solid black;">
+        </canvas>
+        <div style="width: 150px; float: right;">
+            <label for="initialState">Initial State:</label><br>
+            <input type="radio" name="initialState" value="left" />Left<br>
+            <input type="radio" name="initialState" value="center" checked="checked">Center<br>
+            <input type="radio" name="initialState" value="right">Right<br>
+            <input type="radio" name="initialState" value="random">Random<br>
+            <br>
+            <label for="txtRule">Rule (decimal):</label><br>
+            <input type="text" id="txtRule" name="txtRule"
+                style="text-align: right; width: 100px;"/>
+            <br><br>
+            <button onClick="calculate()">Calculate</button>
+        <div>
+    <div>
+</body>
+<script src="cellular-automata.js"></script>
+</html>
